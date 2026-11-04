@@ -1,0 +1,27 @@
+{
+  "passed": true,
+  "bitstream": "D:\\fpgapango\\calibrated_6mm_nokeys_storage_20261102\\fisheye5_calibrated_6mm_nokeys_storage_20261102.sbit",
+  "sha256": "788e841d71df6e9eb3a959c987d022fd7817b8095d4668b9d90ab3e0bb388229",
+  "baseline": {
+    "LUT": 24518.0,
+    "FF": 29114.0,
+    "Distributed_RAM": 426.0,
+    "APM": 58.0,
+    "DRM": 33.0
+  },
+  "current": {
+    "LUT": 24331.0,
+    "FF": 28999.0,
+    "Distributed_RAM": 426.0,
+    "APM": 58.0,
+    "DRM": 32.0
+  },
+  "timing": "All Constraints Met",
+  "placement_seed": 5,
+  "route_seed": 19,
+  "fast_router": true,
+  "route_constraint_iterations": 3,
+  "reused_placement_db": "D:\\fpgapango\\calibrated_6mm_nokeys_storage_20261102\\optimization_nokeys_20261102\\rejected_place5_route19_20261103\\hdmi_ddr_ov5640_top_plc.adf",
+  "hardware_programmed": false,
+  "hardware_measured": false
+}

@@ -1,0 +1,71 @@
+{
+  "mode": "native_scale130_natural_outline",
+  "central_cone_full_angle_deg": 130.0,
+  "output_K": [
+    [
+      271.128242121322,
+      0.0,
+      684.2288276998111
+    ],
+    [
+      0.0,
+      270.1578086884619,
+      375.23836690108885
+    ],
+    [
+      0.0,
+      0.0,
+      1.0
+    ]
+  ],
+  "source_K_D_changed": false,
+  "post_resize": false,
+  "near_axis_scale_vs_raw": [
+    1.0,
+    1.0
+  ],
+  "fixed_small_circle_mask": false,
+  "complete_cone_visible": false,
+  "offscreen_cone_content_clipped": true,
+  "resolution": [
+    1280,
+    720
+  ],
+  "retained_rows": 720,
+  "valid_output_pixels": 779336,
+  "black_output_pixels": 142264,
+  "valid_area_fraction": 0.8456336805555555,
+  "valid_canvas_bbox": [
+    103,
+    0,
+    1265,
+    719
+  ],
+  "source_border_min_margin_px": 70.32780456542969,
+  "rejected_inside_cone_pixels": 0,
+  "anchor_grid": [
+    81,
+    46
+  ],
+  "anchor_count": 3726,
+  "bank_depth": 943,
+  "declared_anchor_storage_bits": 150880,
+  "valid_span_storage_bits": 16560,
+  "tile_count": 230,
+  "output_tile_size": [
+    128,
+    32
+  ],
+  "nonempty_tiles": 217,
+  "max_roi_width": 144,
+  "max_roi_height": 44,
+  "source_prefetch_pixels_per_frame": 663424,
+  "mesh_coordinate_error_vs_opencv_native_source_px": {
+    "maximum": 0.10236012536184239,
+    "rms": 0.0524999696998855,
+    "p99": 0.09290604700764932,
+    "scope": "Mesh and Q8 approximation only; not measured straightness"
+  },
+  "source_calibration_sha256": "e5df211bc99e4412304157569b5788d7a0b13b7e5d1e059fff526449ce3ca032",
+  "interpolator": "RGB565 bilinear_2x2"
+}

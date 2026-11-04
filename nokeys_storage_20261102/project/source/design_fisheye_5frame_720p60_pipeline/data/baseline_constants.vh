@@ -1,0 +1,5 @@
+// Generated from current real calibration.
+`define FISHEYE_OUTPUT_CX_Q12 24'sd2619392
+`define FISHEYE_OUTPUT_CY_Q12 24'sd1472512
+`define FISHEYE_RADIAL_CX_Q28 43'sd173276055594
+`define FISHEYE_RADIAL_CY_Q28 43'sd92459693413

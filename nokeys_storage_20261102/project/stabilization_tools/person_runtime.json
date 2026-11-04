@@ -1,0 +1,7 @@
+{
+  "python": "D:\\fpgapango\\person_follow_20261014\\runtime\\Scripts\\python.exe",
+  "model": "C:/Users/hwx/Desktop/banben/top/nokeys_storage_20261102/project/models/yolo11n_person_640x384.onnx",
+  "provider": "auto",
+  "detection_interval_seconds": 0.0666666667,
+  "cache": "C:/Users/hwx/Desktop/banben/top/nokeys_storage_20261102/project/runtime_cache/person"
+}

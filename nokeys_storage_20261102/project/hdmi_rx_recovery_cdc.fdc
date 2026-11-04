@@ -1,0 +1,11 @@
+# New read-only recovery telemetry crosses from the 10 MHz configuration
+# clock into the selectable output clock through rx_recovery_meta/sync.
+# The legacy get_clocks cfg_clk lookup is empty at constraint-read time.
+# Declare the actual PLL output before classifying this CDC. No RX input
+# delay, RX sampling uncertainty, DDR path or output period is relaxed.
+create_generated_clock -name hdmi_recovery_cfg_clk -source [get_ports {sys_clk}] \
+    [get_pins {u_pll/u_gpll/CLKOUT1}] -master_clock [get_clocks {sys_clk}] \
+    -multiply_by 10 -divide_by 27
+set_clock_groups -name hdmi_recovery_status_cdc -asynchronous \
+    -group [get_clocks {hdmi_recovery_cfg_clk}] \
+    -group [get_clocks {video_local_pix_clk video_hdmi_pix_clk video_pix_clk}]

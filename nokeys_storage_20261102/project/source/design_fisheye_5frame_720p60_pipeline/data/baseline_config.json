@@ -1,0 +1,76 @@
+{
+  "projection": "rectilinear",
+  "output_size": [
+    1280,
+    720
+  ],
+  "horizontal_fov_deg": 110,
+  "output_K": [
+    [
+      448.1328244542143,
+      0.0,
+      639.5
+    ],
+    [
+      0.0,
+      448.05602347797037,
+      359.5
+    ],
+    [
+      0.0,
+      0.0,
+      1.0
+    ]
+  ],
+  "source_K": [
+    [
+      271.90537359820837,
+      0.0,
+      645.5036088595689
+    ],
+    [
+      0.0,
+      271.85877447179143,
+      344.43919887140913
+    ],
+    [
+      0.0,
+      0.0,
+      1.0
+    ]
+  ],
+  "source_D": [
+    0.10046506736193793,
+    -0.02900550763621061,
+    -0.0017789234570500915,
+    0.00011999331782293557
+  ],
+  "camera_K_D_changed": true,
+  "post_resize": false,
+  "source_orientation": "canonical camera DDR; 180-degree rotation from calibration PNG",
+  "HDMI_orientation": "camera: 180-degree display rotation; external HDMI input: ordinary top-left",
+  "interpolation": "existing RGB565 adaptive bilinear/bounded Catmull-Rom",
+  "measured_MTF": false,
+  "calibration_id": "720p_6mm_20261028",
+  "calibration_raw_K": [
+    [
+      271.90537359820837,
+      0.0,
+      633.4963911404311
+    ],
+    [
+      0.0,
+      271.85877447179143,
+      374.56080112859087
+    ],
+    [
+      0.0,
+      0.0,
+      1.0
+    ]
+  ],
+  "calibration_to_source_coordinates": {
+    "u": "1279-u_png",
+    "v": "719-v_png"
+  }
+}

@@ -1,0 +1,1 @@
+`define STAB_LAST_GAIN_WORD 44'h0d23a03490d

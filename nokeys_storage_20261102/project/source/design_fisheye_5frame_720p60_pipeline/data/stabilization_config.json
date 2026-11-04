@@ -1,0 +1,64 @@
+{
+  "matrix_format": "signed Q8.24, R_camera_from_virtual times inverse(output_K)",
+  "gain_domain": "normalized radius squared: 0..64 at 1/64 spacing; 64..4096 at 1 spacing",
+  "minimum_positive_z": 0.015625,
+  "output_size": [
+    1280,
+    720
+  ],
+  "source_K": [
+    [
+      271.90537359820837,
+      0.0,
+      645.5036088595689
+    ],
+    [
+      0.0,
+      271.85877447179143,
+      344.43919887140913
+    ],
+    [
+      0.0,
+      0.0,
+      1.0
+    ]
+  ],
+  "source_D": [
+    0.10046506736193793,
+    -0.02900550763621061,
+    -0.0017789234570500915,
+    0.00011999331782293557
+  ],
+  "default_output_K": [
+    [
+      448.1328244542143,
+      0.0,
+      639.5
+    ],
+    [
+      0.0,
+      448.05602347797037,
+      359.5
+    ],
+    [
+      0.0,
+      0.0,
+      1.0
+    ]
+  ],
+  "sample_rate_hz": 500,
+  "stabilized_views": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7
+  ],
+  "pose_bundle_bytes": 230,
+  "timestamp_tick_us": 10,
+  "binary_baud": 921600,
+  "camera_imu_alignment_calibrated": false,
+  "exposure_timestamp_offset_calibrated": false
+}

@@ -1,0 +1,9 @@
+// Generated from current calibrated exact-Q8 presets.
+`define REVERSE_LIMIT_VIEW0 11'd544
+`define REVERSE_LIMIT_VIEW1 11'd480
+`define REVERSE_LIMIT_VIEW2 11'd480
+`define REVERSE_LIMIT_VIEW3 11'd648
+`define REVERSE_LIMIT_VIEW4 11'd648
+`define REVERSE_LIMIT_VIEW5 11'd648
+`define REVERSE_LIMIT_VIEW6 11'd648
+`define REVERSE_LIMIT_VIEW7 11'd568

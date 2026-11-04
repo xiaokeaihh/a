@@ -1,0 +1,10 @@
+{
+  "passed": true,
+  "decoded_nodes_checked": 8192,
+  "maximum_abs_x_residue": 133,
+  "maximum_abs_difference_residue": 2,
+  "base_words": 1024,
+  "even_words": 2048,
+  "odd_words": 2048,
+  "exact_integer_reconstruction": true
+}

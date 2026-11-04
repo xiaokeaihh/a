@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>稳视·鱼眼矫正与智能取景系统</title>
+<link rel="stylesheet" href="style.css?v=20261027-c-workbench"><link rel="stylesheet" href="workflow.css?v=20261027-c-workbench">
+<link rel="stylesheet" href="panorama.css?v=20261027-c-workbench">
+<link rel="stylesheet" href="workbench.css?v=20261028-wyc-merged-r2">
+</head>
+<body data-control="unified">
+<header><div class="brand"><b>WYC</b><span>画面与跟随控制台</span></div><span id="connection" class="badge">串口未连接</span></header>
+<main>
+ <section class="hero">
+  <div><p class="eyebrow">720P / LIVE CONTROL</p><h1>视角、跟随与稳像</h1></div>
+  <div class="actions">
+   <label class="serial-select"><span>开发板串口</span><select id="serialPort" aria-label="开发板串口"><option value="">等待控制服务</option></select></label>
+   <button id="connect" class="primary">连接</button><button id="disconnect" disabled>断开</button>
+   <small id="serialCaption" hidden>共用串口</small><p id="connectHint" role="status" aria-live="polite">正在连接本地服务…</p>
+  </div>
+ </section>
+ <div class="workspace">
+ <div class="preview-column">
+  <section class="preview card">
+   <div class="section-head"><h2>实时画面</h2><span id="uiRevision" class="ui-revision">LIVE · 全景</span><span id="previewState" class="muted">采集卡未连接</span></div>
+   <div class="capture"><select id="camera" aria-label="视频采集设备"><option value="">选择 HDMI 采集卡</option></select><button id="listVideo">查找</button><button id="startVideo" class="primary">打开画面</button><button id="stopVideo" disabled>关闭</button></div>
+   <div class="monitor-board" id="monitorBoard">
+    <figure class="monitor-pane" id="overviewPanel" data-floating-kind="overview">
+     <figcaption class="float-drag-handle"><span>总览 · 选择目标</span><span class="float-buttons"><button id="displayOverview" data-display-kind="overview" aria-label="弹出总览">↗ 弹出</button><button id="floatOverview" data-float-toggle="overview" hidden>网页浮窗</button><button data-float-maximize="overview" hidden>铺满网页</button></span></figcaption>
+     <div class="monitor-media"><canvas id="trackingOverview" width="640" height="360" aria-label="鱼眼总览，拖动框选目标"></canvas></div>
+     <p id="trackingCapture" class="caption" role="status">开启跟随后选择目标。</p>
+    </figure>
+    <figure class="monitor-pane" id="outputPanel" data-floating-kind="output">
+     <figcaption class="float-drag-handle"><span>跟随画面</span><span class="float-buttons"><button id="displayHdmi" data-display-kind="hdmi" aria-label="弹出跟随画面">↗ 弹出</button><button id="floatOutput" data-float-toggle="output" hidden>网页浮窗</button><button data-float-maximize="output" hidden>铺满网页</button></span></figcaption>
+     <div class="monitor-media"><div class="video-wrap" data-crop="full"><video id="video" autoplay muted playsinline></video><img id="personVideo" hidden alt="跟随画面"><div id="emptyVideo"><span class="screen-icon">▣</span><b>等待 HDMI 画面</b></div><div id="frameMarkerCover" class="frame-marker-cover" hidden aria-hidden="true"></div><canvas id="followStatus" width="144" height="36" hidden aria-label="FPGA 图像开关状态"></canvas></div></div>
+    </figure>
+   </div>
+   <details class="display-tools"><summary>显示工具</summary><div class="display-actions"><button id="displayOriginalCombined" data-display-kind="original_follow">原图＋跟随画面</button><button id="floatBoth">网页内浮窗</button><button id="floatDockAll">全部归位</button><label class="control-only"><input id="controlsOnly" type="checkbox">仅显示控制</label></div></details><p id="displayMessage" class="caption" role="status"></p>
+  </section>
+  <section class="card" id="trackingPanel">
+   <div class="section-head"><h2>目标跟随</h2><span class="muted">先选择方式，再开启</span></div>
+   <div class="person-controls"><label>跟随方式<select id="trackingBackend"><option value="person" selected>人物自动识别</option><option value="object">物体手动框选</option></select></label><label id="personCameraLabel">PC 采集卡<select id="personCamera"><option value="">先查找设备</option></select></label><button id="personDevices">查找 PC 采集卡</button></div>
+   <p class="caption" id="personDeviceHint" role="status"></p>
+   <div class="tracking-actions"><button id="trackingStart" class="primary" disabled>开启跟随</button><button id="trackingReselect" disabled>重新选择</button><button id="trackingStop" disabled>停止</button></div>
+   <p id="trackingState" role="status" aria-live="polite">等待控制服务。</p>
+   <details class="tracking-details"><summary>跟随数据</summary><p id="trackingMetrics" class="caption"></p><div id="personMetrics" class="facts"></div><p id="personBoundary" class="caption"></p><a id="personReport" href="/api/person/report.json" download="person_follow_report.json">导出跟随报告</a></details>
+  </section>
+  <details class="card" id="pipelinePanel"><summary>性能与测量数据</summary><div class="section-head"><h2>FPGA 性能</h2><a href="/api/diagnostics.csv" download>导出 CSV</a></div><p id="pipelineState">等待测量回报。</p><div class="facts"><div><small>核心硬件延迟</small><b id="pipelineLat">—</b></div><div><small>采集 / 矫正重叠</small><b id="pipelineOverlap">—</b></div><div><small>采集 / 矫正</small><b id="pipelineCapRnd">—</b></div><div><small>等待 / 显示交接</small><b id="pipelineQueDsp">—</b></div><div><small>输入 / 新画面帧率</small><b id="pipelineFps">—</b></div><div><small>HDMI 刷新率</small><b id="pipelineOut">—</b></div></div><p id="outputSyncState" class="caption">低延迟同步：等待固件回报</p><p id="pipelineSummary" class="caption"></p><p id="pipelineLoss" class="caption"></p><details><summary>处理与等待明细</summary><div id="pipelineWaits" class="facts"></div></details></details>
+ </div>
+ <aside>
+  <section class="card" id="stabilizationPanel">
+   <div class="section-head"><h2>IMU 稳像</h2><span id="serviceState" class="muted" role="status">等待服务</span></div>
+   <div class="facts"><div><small>静止零偏</small><b id="stableBias">等待连接</b></div><div><small>安装标定</small><b id="stableAxis">等待校准</b></div></div>
+   <p id="stableNextStep" role="status" aria-live="polite">先连接开发板串口。</p>
+   <label>稳像方式<select id="stableMode"><option value="roll">保持水平</option><option value="lock3d">三轴参考视角</option><option value="follow">三轴消抖</option></select></label>
+   <div class="button-row"><button id="stableStart" class="primary" disabled>开启稳像</button><button id="stableStop">关闭稳像</button></div><p id="stableActual" role="status">稳像关闭</p>
+   <details id="installationCalibration"><summary>重新标定 IMU</summary>
+    <div id="automaticCalibration" class="automatic-calibration"><b>自动安装标定</b><p class="caption">先打开原图，再缓慢左右、上下转动；放稳后结束。</p><div class="button-row"><button id="autoStart" disabled>开始标定</button><button id="autoFinish" disabled>结束并计算</button><button id="autoCancel" disabled>取消</button></div><p id="autoState" role="status" aria-live="polite">等待 IMU 与 HDMI 原图。</p></div>
+    <details id="calibrationDetails"><summary>手动标定 / 设置水平</summary><p class="caption">绕镜头轴转动 30°～60°，结束后将画面放平并设置基准。</p><p id="axisProgress" class="caption" role="status"></p><p id="axisFeedback" class="caption" role="status" aria-live="polite"></p><button id="axisStart" disabled>开始光轴校准</button><button id="axisFinish" disabled>结束光轴校准</button><button id="stableReference" disabled>设为水平基准</button></details>
+   </details>
+   <details id="stableAdvanced"><summary>高级设置</summary><label>消抖强度<select id="shakeStrength"><option value="light">轻柔</option><option value="balanced" selected>均衡</option><option value="strong">较强</option></select></label><p id="shakeState" class="caption"></p><label>裁剪倍率<input id="stableZoom" type="number" min="1" max="3" step="0.05" value="1"></label><label>补偿方向<select id="stableDirection"><option value="1">常规</option><option value="-1">反向</option></select></label><label>姿态时间偏移（ms）<input id="stableOffset" type="number" min="-50" max="50" step="0.1" value="0"></label><button id="stableSettings">应用设置</button><p id="stableCounts" class="caption"></p><p id="stableMessage" role="status"></p><p id="exposurePreset" class="exposure-preset" role="status"></p></details>
+  </section>
+  <section class="card" id="viewPanel"><div class="section-head"><h2>视角</h2><span id="mode" class="muted">—</span></div><div class="button-row"><button data-view="0" class="full-button raw-button" aria-pressed="false">原图</button><button data-view="7" class="full-button" aria-pressed="false">矫正图</button><button data-view="6" class="full-button comparison-button" aria-pressed="false">原图与矫正图对比图</button></div><details><summary>更多视角</summary><div class="view-grid"><button data-view="1">↖ 左上</button><button data-view="2">↗ 右上</button><button data-view="3">↙ 左下</button><button data-view="4">↘ 右下</button></div><button data-view="5" class="quad-button">四宫格</button></details><div class="status" role="status" aria-live="polite"><span id="statusDot"></span><div><strong id="activeView">等待开发板</strong><p id="commandState">连接后可切换视角。</p></div></div></section>
+  <details class="card" id="colorDiagnostics"><summary>颜色诊断</summary><p class="caption">测试图上半部为彩条，下半部为灰阶。白色和灰色应保持中性，可用来对比显示器直连与采集卡画面。</p><div class="button-row"><button id="colorPattern" disabled>显示测试图</button><button id="colorCamera" disabled>返回摄像头</button></div><p id="colorDiagnosticState" class="caption" role="status">连接开发板后可使用；切换测试图会停止跟随。</p></details>
+  <details class="card"><summary>图像保存与 IMU 数据</summary><p id="sourceState">等待图源</p><button id="saveFrame" disabled>保存完整原尺寸 PNG</button><section class="imu"><div class="section-head"><h2>IMU 数据</h2><span id="imuId" class="muted">等待数据</span></div><div id="imuValues"><div><small>AX</small><b>—</b></div><div><small>AY</small><b>—</b></div><div><small>AZ</small><b>—</b></div><div><small>GX</small><b>—</b></div><div><small>GY</small><b>—</b></div><div><small>GZ</small><b>—</b></div></div><div id="imuPose" class="facts"><div><small>俯仰</small><b id="imuPitch">—</b></div><div><small>横滚</small><b id="imuRoll">—</b></div></div></section></details>
+ </aside>
+ </div>
+ <details class="card communication"><summary>通信记录</summary><pre id="log"></pre></details>
+</main>
+<footer>本地控制 · 720p / 60 Hz</footer>
+<script src="app.js?v=20261102-nokeys-r1" onerror="document.getElementById('connectHint').textContent='控制脚本加载失败。请重新运行“启动网页控制.cmd”，再刷新页面。'"></script><script src="stabilization.js?v=20261102-nokeys-r1"></script><script src="auto_alignment.js?v=20261102-nokeys-r1"></script><script src="tracking.js?v=20261028-original-panorama-raw-r3"></script><script src="floating_panels.js?v=20261028-wyc-merged-r2"></script><script src="display_windows.js?v=20261028-wyc-merged-r2"></script><script src="output_status.js?v=20261028-wyc-merged-r2"></script><script src="workflow.js?v=20261028-wyc-merged-r2"></script><script src="color_diagnostics.js?v=20261027-c-workbench"></script><script src="panorama_viewer.js?v=20261027-c-workbench"></script><script src="panorama.js?v=20261028-original-panorama-raw-r3"></script><script src="workbench.js?v=20261028-original-panorama-raw-r3"></script></body></html>

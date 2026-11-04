@@ -1,0 +1,42 @@
+{
+  "maximum_source_error_px": 0.011383547529420356,
+  "rms_source_error_px": 0.002775245196850302,
+  "valid_pixels": 779336,
+  "original_footprint_bit_exact": true,
+  "output_scale": 1.0,
+  "output_K": [
+    [
+      271.128242121322,
+      0.0,
+      684.2288276998111
+    ],
+    [
+      0.0,
+      270.1578086884619,
+      375.23836690108885
+    ],
+    [
+      0.0,
+      0.0,
+      1.0
+    ]
+  ],
+  "minimum_optical_margin_px": 68.96376037597656,
+  "max_roi_width": 144,
+  "max_roi_height": 48,
+  "cache_capacity_per_bank": 2240,
+  "empty_tiles_with_minimum_safe_ROI": 13,
+  "source_prefetch_pixels": 687616,
+  "radial_nonzero_pixels": 366956,
+  "texture_active_synthetic_pixels": 364932,
+  "protected_sha256": {
+    "calibration_720p.json": "e5df211bc99e4412304157569b5788d7a0b13b7e5d1e059fff526449ce3ca032",
+    "crop_config.json": "faa41a4fe9aa1c048adfede72defd1956a5981ac078f98cf58a5aa6ced533021",
+    "valid_spans.mem": "9ee483dc831d5a2f7eeadb959c088053203935de94ed45a48aabcc6230ac4090",
+    "source_content_mask.png": "08a7cc59fea6b58526203aa7d4e83b0e8821c3d1be1d30096a11fbd0e3100419",
+    "cubic_phase_compact.mem": "0ff60e39770bd944ec854143e55e217076ba545ab81e94d4448b7a9ef12c2660",
+    "cubic_phase_q12.mem": "3282d7e9f90067fcee3debb5efecca130f6bdf10b71f167ea7bb7ccff72e7481",
+    "detail_gate_q8.mem": "8bb32b7c1065fc8a5d79e234d16054f11604c282c447949f9600dc35c95d6dad"
+  },
+  "mapping_coordinate_format": "axis Q4.14, gain Q1.16, offset Q12, source Q8"
+}

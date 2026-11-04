@@ -1,0 +1,47 @@
+version,2022.2-SP6.4<build 146967>
+project name,HDMI_DDR3_OV5640_test_720p60_pipeline.pds
+
+Single Seed:
+Seed,State,Convergence,Setup(Slow),Setup(Fast),Hold(Slow),Hold(Fast),Recovery(Slow),Recovery(Fast),Removal(Slow),Removal(Fast),PBM-GP,PBM-PreGP,PBM-PostGP,LP,Total Placement Cpu Time,Detailed routing,Total Routing Cpu Time,Wire Length After Post-GP,Wire Length After LP,Wire Length After DP,Routing Arc Length,Worst Slack After GP Timing,Worst Slack After LP Timing,Worst Slack Before RP,Worst Slack Before DP,Worst Slack After DP,Worst Slack After Placement,Worst Slack After TA By Preroute,TNS After DP,TNS Before Route,Setup(Slow) Total Failing TNS,Setup(Slow) Total Failing Endpoints,Hold(Slow) Total Failing THS,Hold(Slow) Total Failing Endpoints,Power
+single,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Pass Rate/Convergence Rate,0.00%,0.00%
+
+Synthesize:
+control_set,NA
+Synthesize Performance Summary:
+slack category,Synthesize Setup WNS,Synthesize Setup TNS,Synthesize Recovery WNS,Synthesize Recovery TNS
+slack value,NA,NA,NA,NA
+Synthesize Process Cpu Time,NA
+
+Device Map:
+Device Map Resource Usage Summary:
+Logic Utilization,LUT,FF,DRM,APM,Distributed RAM,HSSTHP,USCM,HCKB,RCKB
+Used,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Available,NA,NA,NA,NA,NA,NA,NA,NA,NA
+Utilization(%),NA,NA,NA,NA,NA,NA,NA,NA,NA
+Device Map Process Cpu Time,NA
+
+Project Configurations:
+top module,hdmi_ddr_ov5640_top
+compile,
+synthesize," -ads "
+device map,
+place & route," -force_to_run 
+ -gplace_seed 5 
+ -groute_seed 19 
+ -route_constraint_iterate_times 2 
+ -route_constraint_slack 0.1 
+ -route_constraint_max_timing_path 100 
+ -fast_router false 
+ -share_router_control_signal false 
+ -mode {performance} 
+ -optimize_multi_corner_timing 
+ -fix_hold_violation 
+ -fix_hold_violation_iterations 80 
+ -fix_hold_violation_threshold 100 
+ -fix_hold_violation_threshold_for_clock_path_cross_srb 100 
+ -fix_hold_violation_threshold_for_clk_tree 0 "
+
+Test Parameters Configurations:
+testparam,
+

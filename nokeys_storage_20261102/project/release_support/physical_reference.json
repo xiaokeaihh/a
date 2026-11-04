@@ -1,0 +1,8 @@
+{
+  "restored_after_mapping": true,
+  "mandatory_restored_sites": 22,
+  "total_fixed_sites": 25,
+  "sha256": "c6f4ef6147557682c7680bc178874adf8c318e19f19bbddd6e2f5a8ae2c9311b",
+  "source": "baseline_original_source_and_bit.zip/calibration_board.pcf",
+  "route_priority_sha256": "8ee7cad659a3491bcce7b590a1513ca8467162057b5432ea95bae4d8a9ae480e"
+}

@@ -1,0 +1,31 @@
+{
+  "version": "calibrated_6mm_nokeys_storage_20261102",
+  "bitstream": "fisheye5_calibrated_6mm_nokeys_storage_20261102.sbit",
+  "bitstream_sha256": "788e841d71df6e9eb3a959c987d022fd7817b8095d4668b9d90ab3e0bb388229",
+  "resources": {
+    "LUT": 24331.0,
+    "FF": 28999.0,
+    "Distributed_RAM": 426.0,
+    "APM": 58.0,
+    "DRM": 32.0
+  },
+  "timing": "All Constraints Met",
+  "all_hdl_and_ip_match_verified_build": true,
+  "hdl_and_ip_files_checked": 761,
+  "PDS_inputs_checked": 74,
+  "build_physical_restore_test_passed": true,
+  "packed_rom_check_passed": true,
+  "report_sha256": {
+    "build_result.json": "37fbfad1ed6f435fdada76b439f9d27e1a07eab8869c32c77b0b8aae0eb0585f",
+    "device_map.dmr": "aa9e787f4f7d97c643c5c697baed9add854fb3a5533de0a0b265bde9e27bfb63",
+    "io_audit.json": "5d2710ae8a3331d9203d2fdea1a848a7f97190d07e109dac31ef9f48a0442439",
+    "place_route.prr": "469161c40e1e01b05a3cd25621b42f90b097d9c8af64ba6b2e8e850537517bdf",
+    "synthesis.snr": "66e1ef0c421b907f5e413e6d327be3597a5b7855d54cf737f1c52c52d376fe8d",
+    "timing_final.rtr": "286bca944f08fbb5c0216037595dad4464e9ea31173f2c7a9aa117fe2e2352fc"
+  },
+  "changed_build_helpers": [
+    "build_nokeys_storage.py",
+    "regenerate_packed_projection.py"
+  ],
+  "HDL_IP_firmware_and_application_code_unchanged": true
+}

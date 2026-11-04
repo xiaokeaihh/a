@@ -1,0 +1,332 @@
+{
+  "output_size": [
+    1280,
+    720
+  ],
+  "single_final_pane": [
+    640,
+    360
+  ],
+  "single_DDR_viewport": [
+    320,
+    180,
+    640,
+    360
+  ],
+  "fixed_view0": {
+    "yaw": 0,
+    "pitch": 0,
+    "hfov": 100,
+    "cx": 639.5,
+    "cy": 359.5
+  },
+  "quadrants": [
+    {
+      "id": 1,
+      "config": {
+        "yaw": -33,
+        "pitch": 15,
+        "hfov": 100,
+        "cx": 607.5,
+        "cy": 359.5
+      },
+      "metrics": {
+        "black_fraction": 0.0,
+        "maximum_pane_magnification": 3.3163340019503864,
+        "center_pane_magnification": 0.9173002012867392,
+        "maximum_source_angle_deg": 88.33046685742619
+      },
+      "score": 0.20445010029255797,
+      "retained_previous_unlimited_source_footprint": 0.9643697737406711
+    },
+    {
+      "id": 2,
+      "config": {
+        "yaw": 31,
+        "pitch": 15,
+        "hfov": 100,
+        "cx": 671.5,
+        "cy": 359.5
+      },
+      "metrics": {
+        "black_fraction": 0.0,
+        "maximum_pane_magnification": 3.1348879220581973,
+        "center_pane_magnification": 0.9234667769445004,
+        "maximum_source_angle_deg": 86.65992859578068
+      },
+      "score": 0.18323318830872962,
+      "retained_previous_unlimited_source_footprint": 0.9404483084930211
+    },
+    {
+      "id": 3,
+      "config": {
+        "yaw": -33,
+        "pitch": -15,
+        "hfov": 100,
+        "cx": 607.5,
+        "cy": 359.5
+      },
+      "metrics": {
+        "black_fraction": 0.0,
+        "maximum_pane_magnification": 3.316334001950274,
+        "center_pane_magnification": 0.9173002012867392,
+        "maximum_source_angle_deg": 88.33046685742619
+      },
+      "score": 0.2044501002925411,
+      "retained_previous_unlimited_source_footprint": 0.9644039735099338
+    },
+    {
+      "id": 4,
+      "config": {
+        "yaw": 33,
+        "pitch": -15,
+        "hfov": 100,
+        "cx": 671.5,
+        "cy": 359.5
+      },
+      "metrics": {
+        "black_fraction": 0.0,
+        "maximum_pane_magnification": 3.316334001950179,
+        "center_pane_magnification": 0.9173002012867392,
+        "maximum_source_angle_deg": 88.33046685742619
+      },
+      "score": 0.20445010029252686,
+      "retained_previous_unlimited_source_footprint": 0.9643562599798924
+    }
+  ],
+  "central_full": {
+    "id": 6,
+    "config": {
+      "yaw": 0,
+      "pitch": 0,
+      "hfov": 134,
+      "cx": 639.5,
+      "cy": 359.5
+    },
+    "metrics": {
+      "black_fraction": 0.0,
+      "maximum_pane_magnification": 3.604984676756753,
+      "center_pane_magnification": 0.501621202225572,
+      "maximum_source_angle_deg": 69.69624907457126
+    },
+    "score": -134.0
+  },
+  "retained_previous_unlimited_four_view_source_footprint": 0.9554638571982565,
+  "geometric_bounds": {
+    "max_black_fraction_local": 0.02,
+    "max_black_fraction_center": 0.01,
+    "max_local_center_pane_magnification": 1.1,
+    "max_pane_magnification": 4.0,
+    "min_union_coverage_retention": 0.95
+  },
+  "measured_MTF": false,
+  "measured_straightness": false,
+  "camera_K_D_changed": true,
+  "math": "atan2(hypot(X,Y),Z) ray-to-source KB polynomial; no q<32 or z>=0.25 clipping",
+  "source_mask": "historical mask retained only for diagnostics; actual frame bounds and 2px interpolation margin",
+  "central_cache_capacity": {
+    "maximum_roi_width": 240,
+    "maximum_roi_height": 58,
+    "maximum_words_per_parity_bank": 2016
+  },
+  "rejected_central_cache_candidates": [
+    {
+      "config": {
+        "yaw": 0,
+        "pitch": 0,
+        "hfov": 138,
+        "cx": 639.5,
+        "cy": 359.5
+      },
+      "capacity": {
+        "maximum_roi_width": 256,
+        "maximum_roi_height": 62,
+        "maximum_words_per_parity_bank": 2464
+      }
+    },
+    {
+      "config": {
+        "yaw": 0,
+        "pitch": 0,
+        "hfov": 138,
+        "cx": 639.5,
+        "cy": 347.5
+      },
+      "capacity": {
+        "maximum_roi_width": 256,
+        "maximum_roi_height": 62,
+        "maximum_words_per_parity_bank": 2520
+      }
+    },
+    {
+      "config": {
+        "yaw": 0,
+        "pitch": 0,
+        "hfov": 138,
+        "cx": 639.5,
+        "cy": 371.5
+      },
+      "capacity": {
+        "maximum_roi_width": 256,
+        "maximum_roi_height": 62,
+        "maximum_words_per_parity_bank": 2520
+      }
+    },
+    {
+      "config": {
+        "yaw": 0,
+        "pitch": 0,
+        "hfov": 136,
+        "cx": 639.5,
+        "cy": 359.5
+      },
+      "capacity": {
+        "maximum_roi_width": 240,
+        "maximum_roi_height": 60,
+        "maximum_words_per_parity_bank": 2240
+      }
+    },
+    {
+      "config": {
+        "yaw": 0,
+        "pitch": 0,
+        "hfov": 136,
+        "cx": 623.5,
+        "cy": 359.5
+      },
+      "capacity": {
+        "maximum_roi_width": 240,
+        "maximum_roi_height": 60,
+        "maximum_words_per_parity_bank": 2352
+      }
+    },
+    {
+      "config": {
+        "yaw": 0,
+        "pitch": 0,
+        "hfov": 136,
+        "cx": 639.5,
+        "cy": 347.5
+      },
+      "capacity": {
+        "maximum_roi_width": 240,
+        "maximum_roi_height": 60,
+        "maximum_words_per_parity_bank": 2240
+      }
+    },
+    {
+      "config": {
+        "yaw": 0,
+        "pitch": 0,
+        "hfov": 136,
+        "cx": 639.5,
+        "cy": 371.5
+      },
+      "capacity": {
+        "maximum_roi_width": 240,
+        "maximum_roi_height": 60,
+        "maximum_words_per_parity_bank": 2240
+      }
+    },
+    {
+      "config": {
+        "yaw": 0,
+        "pitch": 0,
+        "hfov": 136,
+        "cx": 655.5,
+        "cy": 359.5
+      },
+      "capacity": {
+        "maximum_roi_width": 256,
+        "maximum_roi_height": 60,
+        "maximum_words_per_parity_bank": 2288
+      }
+    },
+    {
+      "config": {
+        "yaw": 0,
+        "pitch": 0,
+        "hfov": 136,
+        "cx": 623.5,
+        "cy": 347.5
+      },
+      "capacity": {
+        "maximum_roi_width": 240,
+        "maximum_roi_height": 60,
+        "maximum_words_per_parity_bank": 2352
+      }
+    },
+    {
+      "config": {
+        "yaw": 0,
+        "pitch": 0,
+        "hfov": 136,
+        "cx": 623.5,
+        "cy": 371.5
+      },
+      "capacity": {
+        "maximum_roi_width": 240,
+        "maximum_roi_height": 60,
+        "maximum_words_per_parity_bank": 2352
+      }
+    },
+    {
+      "config": {
+        "yaw": 0,
+        "pitch": 0,
+        "hfov": 136,
+        "cx": 639.5,
+        "cy": 335.5
+      },
+      "capacity": {
+        "maximum_roi_width": 240,
+        "maximum_roi_height": 60,
+        "maximum_words_per_parity_bank": 2240
+      }
+    },
+    {
+      "config": {
+        "yaw": 0,
+        "pitch": 0,
+        "hfov": 136,
+        "cx": 639.5,
+        "cy": 383.5
+      },
+      "capacity": {
+        "maximum_roi_width": 240,
+        "maximum_roi_height": 60,
+        "maximum_words_per_parity_bank": 2240
+      }
+    },
+    {
+      "config": {
+        "yaw": 0,
+        "pitch": 0,
+        "hfov": 136,
+        "cx": 655.5,
+        "cy": 347.5
+      },
+      "capacity": {
+        "maximum_roi_width": 256,
+        "maximum_roi_height": 60,
+        "maximum_words_per_parity_bank": 2288
+      }
+    },
+    {
+      "config": {
+        "yaw": 0,
+        "pitch": 0,
+        "hfov": 136,
+        "cx": 655.5,
+        "cy": 371.5
+      },
+      "capacity": {
+        "maximum_roi_width": 256,
+        "maximum_roi_height": 60,
+        "maximum_words_per_parity_bank": 2288
+      }
+    }
+  ],
+  "calibration_id": "720p_6mm_20261028",
+  "stored_quality_metrics_note": "Inherited metrics describe the previous calibration; view configs are preserved"
+}

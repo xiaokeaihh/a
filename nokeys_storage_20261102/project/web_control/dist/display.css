@@ -1,0 +1,42 @@
+:root{color-scheme:dark;font-family:"Microsoft YaHei",system-ui,sans-serif;background:#090d13;color:#dfebef}*{box-sizing:border-box}body{margin:0;height:100vh;display:flex;flex-direction:column;overflow:hidden}header{display:flex;align-items:center;gap:12px;padding:10px 16px;background:#19232d;flex-wrap:wrap}header strong{color:#72e8cd;margin-right:auto;font-size:14px}label{display:flex;align-items:center;gap:8px;font-size:12px}button,select{font:inherit;color:#e7f0f4;background:#233440;border:1px solid #486074;border-radius:6px;padding:7px 12px;cursor:pointer;font-size:12px}button:hover,select:hover{border-color:#72e8cd}main{flex:1;min-height:0;display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:16px;padding:16px}figure{margin:0;display:flex;flex-direction:column;min-width:0;min-height:0}figcaption{font-size:13px;color:#acd4cc;margin-bottom:10px}.screen{flex:1;min-height:0;display:flex;align-items:center;justify-content:center;background:#000;border:1px solid #283e4d;border-radius:8px;overflow:hidden}canvas,video{display:block;max-width:100%;max-height:100%;width:100%;height:100%;object-fit:contain}[hidden]{display:none!important}#overview{touch-action:none;cursor:crosshair}p,footer{font-size:11px;color:#8c9eae}p{margin:8px 0 0;min-height:16px}footer{padding:7px 16px 10px;line-height:1.5}body[data-layout="hdmi"] #overviewPane,body[data-layout="overview"] #outputPane{display:none}body:not([data-layout="combined"]) main{grid-template-columns:minmax(0,1fr)}:fullscreen header{opacity:.2}:fullscreen header:hover,:fullscreen header:focus-within{opacity:1}@media(max-width:600px){header strong{display:none}main{gap:8px;padding:8px}figcaption{font-size:11px}p{font-size:10px}}
+
+#outputPicture{position:relative;flex-shrink:0;overflow:hidden;background:#000}#outputPicture video,#outputPicture canvas{position:absolute;inset:0;width:100%;height:100%}#markerCover{position:absolute;right:-1px;top:-1px;width:calc(15% + 3px);height:calc(4.444445% + 3px);background:#000;pointer-events:none;z-index:2}
+
+#outputPreview{position:absolute;inset:0;width:100%;height:100%;object-fit:contain}#overviewPicture{position:relative;flex-shrink:0;overflow:hidden;background:#000}#overviewPicture #overview{position:absolute;inset:0;width:100%;height:100%;z-index:1}#overviewPreview{position:absolute;max-width:none;width:200%;height:200%;left:0;top:-50%}
+
+/* Palette restored from the accepted 20261017 warm display. */
+:root{background:#181719;color:#f3ebe1;--accent:#e9aa7f;--line:#493b35;--muted:#b1a49a}
+header{background:#282123;border-bottom:1px solid #584334}
+header strong{color:var(--accent)}
+button,select{background:#352b2a;border-color:#765843;color:#f0e1d3}
+button:hover,select:hover{border-color:var(--accent)}
+button:focus-visible,select:focus-visible{outline:2px solid var(--accent);outline-offset:3px}
+figcaption{color:#dfc3a8}
+p,footer{color:#b7a394}
+.screen{border-color:#624937}
+
+/* Present the right 640x360 pane of the 1280x720 comparison source.
+   Black pixels inside that pane and the underlying shared track are retained. */
+#outputPicture[data-crop="right"]>video,#outputPicture[data-crop="right"]>img,#outputPicture[data-crop="right"]>#output{inset:auto;left:-100%;top:-50%;max-width:none;max-height:none;width:200%;height:200%;object-fit:fill}
+#outputPicture[data-crop="right"]>#markerCover{display:none!important}
+#outputPicture>#outputStatus{inset:auto;left:auto;top:auto;right:2.5%;bottom:4.444445%;max-width:none;max-height:none;width:22.5%;height:10%;z-index:3;pointer-events:none}
+
+/* Clean original beside the follow output; same borrowed capture track. */
+body[data-layout="original_follow"] main{grid-template-columns:minmax(0,1fr) minmax(0,1fr)}
+body[data-layout="original_follow"] #overview{pointer-events:none;cursor:default}
+#originalVideo{position:absolute;max-width:none;max-height:none;width:200%;height:200%;left:0;top:-50%;object-fit:fill}
+#overviewPicture[data-crop="full"]>#originalVideo,#overviewPicture[data-crop="full"]>#overviewPreview{width:100%;height:100%;left:0;top:0}
+@media(max-width:700px){body[data-layout="original_follow"] main{grid-template-columns:minmax(0,1fr);grid-template-rows:minmax(0,1fr) minmax(0,1fr)}}
+
+/* Approved C workbench palette. Media geometry and shared tracks are unchanged. */
+:root{background:#1b1917;color:#e9dfd3;--accent:#c49a70;--line:#423a32;--muted:#b2a18e}
+header{background:#26211d;border-bottom:1px solid var(--line)}
+header strong{color:#e9dfd3;font-weight:600}
+button,select{border-radius:2px;background:#2c2722;color:#e9dfd3;border-color:var(--line)}
+.screen{border-radius:0;border-color:var(--line)}
+figcaption{color:#cbb498}p,footer{color:var(--muted)}
+.attitude-overlay{border-radius:2px;background:#26211deb;border-color:#806449;color:#e9dfd3}
+
+/* Final IMU display: white data only, at the lower-left edge. */
+.attitude-overlay,#outputPicture>.attitude-overlay{left:2%;top:auto;bottom:6px;max-width:96%;padding:0;border:0;border-radius:0;background:transparent;box-shadow:none;color:#fff;font:clamp(12px,1.05vw,15px) Consolas,"Microsoft YaHei",monospace;line-height:1.5;text-shadow:0 1px 3px #000,0 0 2px #000;white-space:pre-line;pointer-events:none}
+#followStatus,#outputStatus{display:none!important}

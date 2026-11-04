@@ -1,0 +1,58 @@
+# No additional routing priorities required for this revision.
+
+# Preserve all timing requirements; prefer the four DDR write-leveling data nets.
+def_route -prior_net {u_ddr3_test_h/u_ddrphy_top/ddrphy_slice_top/i_dqs_group[2].ddrphy_data_slice/wrlvl_dqs_en}
+def_route -prior_net {u_ddr3_test_h/u_ddrphy_top/ddrphy_slice_top/i_dqs_group[2].ddrphy_data_slice/adj_wrdqs [0]}
+def_route -prior_net {u_ddr3_test_h/u_ddrphy_top/ddrphy_slice_top/i_dqs_group[3].ddrphy_data_slice/wrlvl_dqs_en}
+def_route -prior_net {u_ddr3_test_h/u_ddrphy_top/ddrphy_slice_top/i_dqs_group[3].ddrphy_data_slice/adj_wrdqs [0]}
+
+def_route -prior_net {u_ddr3_test_h/u_ddrphy_top/ddrphy_slice_top/i_dqs_group[0].ddrphy_data_slice/wrlvl_dqs_en}
+def_route -prior_net {u_ddr3_test_h/u_ddrphy_top/ddrphy_slice_top/i_dqs_group[0].ddrphy_data_slice/adj_wrdqs [0]}
+def_route -prior_net {u_ddr3_test_h/u_ddrphy_top/ddrphy_slice_top/i_dqs_group[1].ddrphy_data_slice/wrlvl_dqs_en}
+def_route -prior_net {u_ddr3_test_h/u_ddrphy_top/ddrphy_slice_top/i_dqs_group[1].ddrphy_data_slice/adj_wrdqs [0]}
+
+def_route -prior_net {u_fisheye_video_path/u_renderer/core/frontend/reader/N480}
+def_route -prior_net {u_fisheye_video_path/u_renderer/core/frontend/reader/N1859}
+def_route -prior_net {u_fisheye_video_path/u_renderer/core/frontend/lookup_ready}
+def_route -prior_net {u_fisheye_video_path/u_renderer/core/frontend/reader/push}
+def_route -prior_net {u_fisheye_video_path/raw_reverse [2]}
+def_route -prior_net {u_fisheye_video_path/bank_rows_committed[1] [6]}
+
+# Physical routing priorities only; all timing constraints remain unchanged.
+def_route -prior_net {u_fisheye_video_path/u_renderer/core/frontend/pool/fill_state [1]}
+def_route -prior_net {u_fisheye_video_path/u_renderer/core/frontend/pool/N596}
+def_route -prior_net {u_fisheye_video_path/u_renderer/core/frontend/lookup_ready}
+def_route -prior_net {u_fisheye_video_path/u_renderer/core/frontend/lookup_valid}
+def_route -prior_net {u_fisheye_video_path/u_renderer/core/frontend/refill_ready}
+def_route -prior_net {u_fisheye_video_path/u_renderer/core/frontend/reader/_N216297}
+def_route -prior_net {u_fisheye_video_path/u_renderer/core/frontend/reader/N4178}
+
+# Physical routing priority for the measured DSP/carry/re-register path.
+# No timing exception, period, uncertainty or pipeline change.
+def_route -prior_net {u_fisheye_video_path/u_renderer/core/projection/_N320}
+def_route -prior_net {u_fisheye_video_path/u_renderer/core/projection/_N377}
+def_route -prior_net {u_fisheye_video_path/u_renderer/core/projection/N167 [34]}
+def_route -prior_net {u_fisheye_video_path/u_banks/n_camera_accept}
+def_route -prior_net {u_fisheye_video_path/u_renderer/core/source_tag [0]}
+def_route -prior_net {u_fisheye_video_path/u_renderer/core/returned_metadata [6]}
+
+// DDR launch nets from measured setup paths.
+def_route -prior_net {u_ddr3_test_h/u_ddrphy_top/ddrphy_slice_top/i_dqs_group[0].ddrphy_data_slice/wrlvl_dqs}
+def_route -prior_net {u_ddr3_test_h/u_ddrphy_top/ddrphy_slice_top/i_dqs_group[1].ddrphy_data_slice/wrlvl_dqs}
+def_route -prior_net {u_ddr3_test_h/u_ddrphy_top/ddrphy_slice_top/i_dqs_group[2].ddrphy_data_slice/wrlvl_dqs}
+def_route -prior_net {u_ddr3_test_h/u_ddrphy_top/ddrphy_slice_top/i_dqs_group[3].ddrphy_data_slice/wrlvl_dqs}
+
+# Measured bank-ownership control path; original clock and timing constraints unchanged.
+def_route -prior_net {u_fisheye_video_path/render_source_bank [0]}
+def_route -prior_net {u_fisheye_video_path/u_renderer/core/source_reverse}
+def_route -prior_net {u_fisheye_video_path/baseline_fast}
+def_route -prior_net {u_fisheye_video_path/_N224508_2}
+def_route -prior_net {u_fisheye_video_path/u_banks/N87}
+def_route -prior_net {u_fisheye_video_path/u_banks/N88 [0]}
+def_route -prior_net {u_fisheye_video_path/u_banks/_N229613}
+def_route -prior_net {u_fisheye_video_path/u_banks/N99}
+def_route -prior_net {u_fisheye_video_path/u_banks/N378}
+def_route -prior_net {u_fisheye_video_path/u_banks/N385}
+def_route -prior_net {u_fisheye_video_path/u_banks/n_render_grant}
+def_route -prior_net {u_fisheye_video_path/u_banks/N175 [1]}
+def_route -prior_net {u_fisheye_video_path/u_banks/N177 [1]}

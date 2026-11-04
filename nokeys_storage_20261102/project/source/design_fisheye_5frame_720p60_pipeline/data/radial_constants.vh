@@ -1,0 +1,5 @@
+// Balanced central rectilinear view; K/D unchanged.
+`define FISHEYE_OUTPUT_CX_Q12 24'sd2619392
+`define FISHEYE_OUTPUT_CY_Q12 24'sd1472512
+`define FISHEYE_RADIAL_CX_Q28 43'sd183671277372
+`define FISHEYE_RADIAL_CY_Q28 43'sd100727282128

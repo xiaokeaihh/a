@@ -1,0 +1,98 @@
+{
+  "passed": true,
+  "ui_version": "20261028-original-panorama-raw-r3",
+  "routes": {
+    "monitor": "#/monitor",
+    "recordings": "#/recordings",
+    "panorama": "#/panorama"
+  },
+  "removed_visible_tools": [
+    "设置导航",
+    "性能与测量数据",
+    "通信记录",
+    "颜色诊断",
+    "图像详情",
+    "高级设置"
+  ],
+  "recording_live_preview": true,
+  "serial_and_media_owners_preserved": true,
+  "backup": "C:\\Users\\hwx\\Desktop\\banben\\apple\\1\\backup_web_pages_20261028_162612",
+  "bitstream_unchanged": true,
+  "firmware_sha256": "cec22858ff1674be01ffb6f005a4c3eb4aa39d1f02c180cf7b4f93dd1b473fcd",
+  "publish_written": false,
+  "staging_validation": {
+    "passed": true,
+    "delivered": false,
+    "three_separate_pages": true,
+    "settings_and_diagnostics_hidden": true,
+    "recording_live_preview_visible": true,
+    "media_and_serial_preserved": true,
+    "real_browser_recording_survives_navigation": true,
+    "recorded_bytes": 61715,
+    "comparison_crop_preserved": true,
+    "history_and_deep_link": true,
+    "desktop_and_mobile_no_overflow": true,
+    "page_errors": [],
+    "hardware_commands_sent": 0
+  },
+  "delivery_validation": {
+    "passed": true,
+    "delivered": true,
+    "live_service_checked": true,
+    "three_separate_pages": true,
+    "settings_and_diagnostics_hidden": true,
+    "recording_live_preview_visible": true,
+    "media_and_serial_preserved": true,
+    "real_browser_recording_survives_navigation": true,
+    "recorded_bytes": 60001,
+    "comparison_crop_preserved": true,
+    "history_and_deep_link": true,
+    "desktop_and_mobile_no_overflow": true,
+    "page_errors": [],
+    "hardware_commands_sent": 0
+  },
+  "merged_ui_20261028": {
+    "passed": true,
+    "folder": "C:\\Users\\hwx\\Desktop\\banben\\wyc\\1\\1\\1",
+    "control_version": "20261028-live-view-merged-r2",
+    "ui_changes_merged": true,
+    "raw_button_and_default_raw": true,
+    "comparison_label": "原图与矫正图对比图",
+    "imu_enabled_white_data_only": true,
+    "imu_bottom_offset_px": 6,
+    "legacy_black_strip_disabled": true,
+    "panorama_and_live_view_preserved": true,
+    "imu_fusion_unchanged": true,
+    "raw_bitstream": "C:\\Users\\hwx\\Desktop\\banben\\wyc\\1\\1\\1\\fisheye5_storage_panorama_raw_20261028.sbit",
+    "raw_bitstream_sha256": "cec22858ff1674be01ffb6f005a4c3eb4aa39d1f02c180cf7b4f93dd1b473fcd",
+    "resources": {
+      "LUT": 24458,
+      "FF": 29101,
+      "DRM": 33,
+      "APM": 57,
+      "Distributed_RAM": 426
+    },
+    "backup": "C:\\Users\\hwx\\Desktop\\banben\\wyc\\1\\1\\1\\backup_merged_ui_20261028_194222",
+    "port_8772_not_started": true,
+    "serial_not_connected": true,
+    "publish_written": false
+  },
+  "original_panorama_restore_20261028": {
+    "passed": true,
+    "control_version": "20261028-original-panorama-raw-r3",
+    "restored_from": "backup_continuous_panorama_20261028",
+    "backup": "C:\\Users\\hwx\\Desktop\\banben\\wyc\\1\\1\\1\\backup_restore_original_panorama_20261028_202548",
+    "new_live_view_removed": true,
+    "continuous_strips_removed": true,
+    "original_keyframe_panorama": true,
+    "routes": [
+      "monitor",
+      "recordings",
+      "panorama"
+    ],
+    "raw_protocol6_imu_ui_and_serial_fixes_retained": true,
+    "firmware_unchanged": true,
+    "existing_photos_and_recordings_unchanged": true,
+    "hardware_tested": false
+  }
+}

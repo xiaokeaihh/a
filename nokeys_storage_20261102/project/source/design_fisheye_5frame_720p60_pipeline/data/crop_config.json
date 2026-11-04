@@ -1,0 +1,53 @@
+{
+  "projection": "balanced_rectilinear_center",
+  "central_cone_full_angle_deg": null,
+  "output_resolution": [
+    1280,
+    720
+  ],
+  "output_K": [
+    [
+      271.663882374147,
+      0.0,
+      639.5
+    ],
+    [
+      0.0,
+      270.6915317555107,
+      359.5
+    ],
+    [
+      0.0,
+      0.0,
+      1.0
+    ]
+  ],
+  "output_scale": 1.0,
+  "output_scale_y": 1.0,
+  "display_window": "full 1280x720 canvas; no artificial angular mask",
+  "source_content_mask": "source_content_mask.png",
+  "border_margin_px": 0,
+  "anchor_step_px": 16,
+  "anchor_grid_size": [
+    81,
+    46
+  ],
+  "parity_bank_depth": 943,
+  "output_tile_size": [
+    128,
+    8
+  ],
+  "optical_axis_rotation_deg": [
+    0.0,
+    0.0,
+    0.0
+  ],
+  "camera_K_D_changed": false,
+  "post_resize": false,
+  "fixed_small_circle_mask": false,
+  "complete_cone_visible": false,
+  "policy": "Measured camera K as rectilinear output K. Preserve near-axis native scale and principal point; no fit-to-circle or anisotropic display resize; retain rays within +/-65 degrees and clip offscreen content.",
+  "angular_mask_enabled": false,
+  "source_content_mask_used_for_view6": false,
+  "active_generation_tool": "quality_tools/generate_balanced.py"
+}

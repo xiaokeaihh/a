@@ -1,0 +1,36 @@
+{
+  "mode": "native130_radial_1d_adaptive_interpolation",
+  "resolution": [
+    1280,
+    720
+  ],
+  "output_scale": 1.0,
+  "output_K": [
+    [
+      271.128242121322,
+      0.0,
+      684.2288276998111
+    ],
+    [
+      0.0,
+      270.1578086884619,
+      375.23836690108885
+    ],
+    [
+      0.0,
+      0.0,
+      1.0
+    ]
+  ],
+  "valid_output_pixels": 779336,
+  "source_calibration_changed": false,
+  "display_mask_changed": false,
+  "interpolator": "texture/radial gated full RGB bilinear and limited Catmull-Rom bicubic",
+  "phase_compact_bits": 33,
+  "max_roi_width": 144,
+  "max_roi_height": 48,
+  "cache_capacity_per_bank": 2240,
+  "source_prefetch_pixels_per_frame": 687616,
+  "maximum_source_coordinate_error_px": 0.011383547529420356,
+  "Gamma": "original WYC enhancement, after display DDR read"
+}

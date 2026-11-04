@@ -1,0 +1,796 @@
+{
+  "passed": true,
+  "part": "PG2L100H",
+  "package": "FBG676",
+  "retained_ports": 153,
+  "pin_LOC_direction_and_electrical_attributes_identical": true,
+  "bank_report_label_differences": [
+    {
+      "port": "b_in[3]",
+      "pin": "H18",
+      "original_label": "BANKL4",
+      "reroute_report_label": "BANKL6"
+    },
+    {
+      "port": "b_in[4]",
+      "pin": "L17",
+      "original_label": "BANKL4",
+      "reroute_report_label": "BANKL6"
+    },
+    {
+      "port": "b_in[5]",
+      "pin": "M16",
+      "original_label": "BANKL4",
+      "reroute_report_label": "BANKL6"
+    },
+    {
+      "port": "b_in[6]",
+      "pin": "M17",
+      "original_label": "BANKL4",
+      "reroute_report_label": "BANKL6"
+    },
+    {
+      "port": "b_in[7]",
+      "pin": "M14",
+      "original_label": "BANKL4",
+      "reroute_report_label": "BANKL6"
+    },
+    {
+      "port": "b_out[0]",
+      "pin": "P19",
+      "original_label": "BANKL5",
+      "reroute_report_label": "BANKL6"
+    },
+    {
+      "port": "b_out[1]",
+      "pin": "P21",
+      "original_label": "BANKL5",
+      "reroute_report_label": "BANKL6"
+    },
+    {
+      "port": "b_out[2]",
+      "pin": "P20",
+      "original_label": "BANKL5",
+      "reroute_report_label": "BANKL6"
+    },
+    {
+      "port": "b_out[3]",
+      "pin": "M22",
+      "original_label": "BANKL5",
+      "reroute_report_label": "BANKL6"
+    },
+    {
+      "port": "b_out[4]",
+      "pin": "M21",
+      "original_label": "BANKL5",
+      "reroute_report_label": "BANKL6"
+    },
+    {
+      "port": "b_out[5]",
+      "pin": "N18",
+      "original_label": "BANKL5",
+      "reroute_report_label": "BANKL6"
+    },
+    {
+      "port": "b_out[6]",
+      "pin": "R22",
+      "original_label": "BANKL5",
+      "reroute_report_label": "BANKL6"
+    },
+    {
+      "port": "b_out[7]",
+      "pin": "T22",
+      "original_label": "BANKL5",
+      "reroute_report_label": "BANKL6"
+    },
+    {
+      "port": "clk_n",
+      "pin": "N2",
+      "original_label": "BANKR5",
+      "reroute_report_label": "BANKL6"
+    },
+    {
+      "port": "clk_p",
+      "pin": "N3",
+      "original_label": "BANKR5",
+      "reroute_report_label": "BANKL6"
+    },
+    {
+      "port": "cmos_init_done[0]",
+      "pin": "A17",
+      "original_label": "BANKL3",
+      "reroute_report_label": "BANKL6"
+    },
+    {
+      "port": "cmos_init_done[1]",
+      "pin": "E18",
+      "original_label": "BANKL3",
+      "reroute_report_label": "BANKL6"
+    },
+    {
+      "port": "ddr_init_done",
+      "pin": "C18",
+      "original_label": "BANKL3",
+      "reroute_report_label": "BANKL6"
+    },
+    {
+      "port": "de_in",
+      "pin": "H23",
+      "original_label": "BANKL4",
+      "reroute_report_label": "BANKL6"
+    },
+    {
+      "port": "de_out",
+      "pin": "N19",
+      "original_label": "BANKL5",
+      "reroute_report_label": "BANKL6"
+    },
+    {
+      "port": "g_in[2]",
+      "pin": "J15",
+      "original_label": "BANKL4",
+      "reroute_report_label": "BANKL6"
+    },
+    {
+      "port": "g_in[3]",
+      "pin": "J16",
+      "original_label": "BANKL4",
+      "reroute_report_label": "BANKL6"
+    },
+    {
+      "port": "g_in[4]",
+      "pin": "K15",
+      "original_label": "BANKL4",
+      "reroute_report_label": "BANKL6"
+    },
+    {
+      "port": "g_in[5]",
+      "pin": "K17",
+      "original_label": "BANKL4",
+      "reroute_report_label": "BANKL6"
+    },
+    {
+      "port": "g_in[6]",
+      "pin": "K16",
+      "original_label": "BANKL4",
+      "reroute_report_label": "BANKL6"
+    },
+    {
+      "port": "g_in[7]",
+      "pin": "L15",
+      "original_label": "BANKL4",
+      "reroute_report_label": "BANKL6"
+    },
+    {
+      "port": "g_out[0]",
+      "pin": "T25",
+      "original_label": "BANKL5",
+      "reroute_report_label": "BANKL6"
+    },
+    {
+      "port": "g_out[1]",
+      "pin": "P25",
+      "original_label": "BANKL5",
+      "reroute_report_label": "BANKL6"
+    },
+    {
+      "port": "g_out[2]",
+      "pin": "R25",
+      "original_label": "BANKL5",
+      "reroute_report_label": "BANKL6"
+    },
+    {
+      "port": "g_out[3]",
+      "pin": "P24",
+      "original_label": "BANKL5",
+      "reroute_report_label": "BANKL6"
+    },
+    {
+      "port": "g_out[4]",
+      "pin": "P23",
+      "original_label": "BANKL5",
+      "reroute_report_label": "BANKL6"
+    },
+    {
+      "port": "g_out[5]",
+      "pin": "N24",
+      "original_label": "BANKL5",
+      "reroute_report_label": "BANKL6"
+    },
+    {
+      "port": "g_out[6]",
+      "pin": "N23",
+      "original_label": "BANKL5",
+      "reroute_report_label": "BANKL6"
+    },
+    {
+      "port": "g_out[7]",
+      "pin": "N22",
+      "original_label": "BANKL5",
+      "reroute_report_label": "BANKL6"
+    },
+    {
+      "port": "hdmi_int_led",
+      "pin": "C19",
+      "original_label": "BANKL3",
+      "reroute_report_label": "BANKL6"
+    },
+    {
+      "port": "heart_beat_led",
+      "pin": "A20",
+      "original_label": "BANKL3",
+      "reroute_report_label": "BANKL6"
+    },
+    {
+      "port": "hs_out",
+      "pin": "R20",
+      "original_label": "BANKL5",
+      "reroute_report_label": "BANKL6"
+    },
+    {
+      "port": "iic_tx_scl",
+      "pin": "K22",
+      "original_label": "BANKL4",
+      "reroute_report_label": "BANKL6"
+    },
+    {
+      "port": "iic_tx_sda",
+      "pin": "K23",
+      "original_label": "BANKL4",
+      "reroute_report_label": "BANKL6"
+    },
+    {
+      "port": "mem_a[0]",
+      "pin": "J1",
+      "original_label": "BANKR5",
+      "reroute_report_label": "BANKL6"
+    },
+    {
+      "port": "mem_a[10]",
+      "pin": "T3",
+      "original_label": "BANKR5",
+      "reroute_report_label": "BANKL6"
+    },
+    {
+      "port": "mem_a[11]",
+      "pin": "P1",
+      "original_label": "BANKR5",
+      "reroute_report_label": "BANKL6"
+    },
+    {
+      "port": "mem_a[12]",
+      "pin": "T4",
+      "original_label": "BANKR5",
+      "reroute_report_label": "BANKL6"
+    },
+    {
+      "port": "mem_a[13]",
+      "pin": "M2",
+      "original_label": "BANKR5",
+      "reroute_report_label": "BANKL6"
+    },
+    {
+      "port": "mem_a[14]",
+      "pin": "N1",
+      "original_label": "BANKR5",
+      "reroute_report_label": "BANKL6"
+    },
+    {
+      "port": "mem_a[1]",
+      "pin": "L3",
+      "original_label": "BANKR5",
+      "reroute_report_label": "BANKL6"
+    },
+    {
+      "port": "mem_a[2]",
+      "pin": "L2",
+      "original_label": "BANKR5",
+      "reroute_report_label": "BANKL6"
+    },
+    {
+      "port": "mem_a[3]",
+      "pin": "P3",
+      "original_label": "BANKR5",
+      "reroute_report_label": "BANKL6"
+    },
+    {
+      "port": "mem_a[4]",
+      "pin": "T2",
+      "original_label": "BANKR5",
+      "reroute_report_label": "BANKL6"
+    },
+    {
+      "port": "mem_a[5]",
+      "pin": "M1",
+      "original_label": "BANKR5",
+      "reroute_report_label": "BANKL6"
+    },
+    {
+      "port": "mem_a[6]",
+      "pin": "U1",
+      "original_label": "BANKR5",
+      "reroute_report_label": "BANKL6"
+    },
+    {
+      "port": "mem_a[7]",
+      "pin": "K1",
+      "original_label": "BANKR5",
+      "reroute_report_label": "BANKL6"
+    },
+    {
+      "port": "mem_a[8]",
+      "pin": "U2",
+      "original_label": "BANKR5",
+      "reroute_report_label": "BANKL6"
+    },
+    {
+      "port": "mem_a[9]",
+      "pin": "K2",
+      "original_label": "BANKR5",
+      "reroute_report_label": "BANKL6"
+    },
+    {
+      "port": "mem_ba[0]",
+      "pin": "P4",
+      "original_label": "BANKR5",
+      "reroute_report_label": "BANKL6"
+    },
+    {
+      "port": "mem_ba[1]",
+      "pin": "R2",
+      "original_label": "BANKR5",
+      "reroute_report_label": "BANKL6"
+    },
+    {
+      "port": "mem_ba[2]",
+      "pin": "T5",
+      "original_label": "BANKR5",
+      "reroute_report_label": "BANKL6"
+    },
+    {
+      "port": "mem_cas_n",
+      "pin": "T7",
+      "original_label": "BANKR5",
+      "reroute_report_label": "BANKL6"
+    },
+    {
+      "port": "mem_ck",
+      "pin": "U6",
+      "original_label": "BANKR5",
+      "reroute_report_label": "BANKL6"
+    },
+    {
+      "port": "mem_ck_n",
+      "pin": "U5",
+      "original_label": "BANKR5",
+      "reroute_report_label": "BANKL6"
+    },
+    {
+      "port": "mem_cke",
+      "pin": "R1",
+      "original_label": "BANKR5",
+      "reroute_report_label": "BANKL6"
+    },
+    {
+      "port": "mem_cs_n",
+      "pin": "N4",
+      "original_label": "BANKR5",
+      "reroute_report_label": "BANKL6"
+    },
+    {
+      "port": "mem_dm[0]",
+      "pin": "K6",
+      "original_label": "BANKR4",
+      "reroute_report_label": "BANKL6"
+    },
+    {
+      "port": "mem_dm[1]",
+      "pin": "F7",
+      "original_label": "BANKR4",
+      "reroute_report_label": "BANKL6"
+    },
+    {
+      "port": "mem_dm[2]",
+      "pin": "D5",
+      "original_label": "BANKR4",
+      "reroute_report_label": "BANKL6"
+    },
+    {
+      "port": "mem_dm[3]",
+      "pin": "E2",
+      "original_label": "BANKR4",
+      "reroute_report_label": "BANKL6"
+    },
+    {
+      "port": "mem_dq[0]",
+      "pin": "G5",
+      "original_label": "BANKR4",
+      "reroute_report_label": "BANKL6"
+    },
+    {
+      "port": "mem_dq[10]",
+      "pin": "H8",
+      "original_label": "BANKR4",
+      "reroute_report_label": "BANKL6"
+    },
+    {
+      "port": "mem_dq[11]",
+      "pin": "D6",
+      "original_label": "BANKR4",
+      "reroute_report_label": "BANKL6"
+    },
+    {
+      "port": "mem_dq[12]",
+      "pin": "G8",
+      "original_label": "BANKR4",
+      "reroute_report_label": "BANKL6"
+    },
+    {
+      "port": "mem_dq[13]",
+      "pin": "E6",
+      "original_label": "BANKR4",
+      "reroute_report_label": "BANKL6"
+    },
+    {
+      "port": "mem_dq[14]",
+      "pin": "H9",
+      "original_label": "BANKR4",
+      "reroute_report_label": "BANKL6"
+    },
+    {
+      "port": "mem_dq[15]",
+      "pin": "G6",
+      "original_label": "BANKR4",
+      "reroute_report_label": "BANKL6"
+    },
+    {
+      "port": "mem_dq[16]",
+      "pin": "C4",
+      "original_label": "BANKR4",
+      "reroute_report_label": "BANKL6"
+    },
+    {
+      "port": "mem_dq[17]",
+      "pin": "D4",
+      "original_label": "BANKR4",
+      "reroute_report_label": "BANKL6"
+    },
+    {
+      "port": "mem_dq[18]",
+      "pin": "A4",
+      "original_label": "BANKR4",
+      "reroute_report_label": "BANKL6"
+    },
+    {
+      "port": "mem_dq[19]",
+      "pin": "E3",
+      "original_label": "BANKR4",
+      "reroute_report_label": "BANKL6"
+    },
+    {
+      "port": "mem_dq[1]",
+      "pin": "J6",
+      "original_label": "BANKR4",
+      "reroute_report_label": "BANKL6"
+    },
+    {
+      "port": "mem_dq[20]",
+      "pin": "C3",
+      "original_label": "BANKR4",
+      "reroute_report_label": "BANKL6"
+    },
+    {
+      "port": "mem_dq[21]",
+      "pin": "F3",
+      "original_label": "BANKR4",
+      "reroute_report_label": "BANKL6"
+    },
+    {
+      "port": "mem_dq[22]",
+      "pin": "B4",
+      "original_label": "BANKR4",
+      "reroute_report_label": "BANKL6"
+    },
+    {
+      "port": "mem_dq[23]",
+      "pin": "D3",
+      "original_label": "BANKR4",
+      "reroute_report_label": "BANKL6"
+    },
+    {
+      "port": "mem_dq[24]",
+      "pin": "F2",
+      "original_label": "BANKR4",
+      "reroute_report_label": "BANKL6"
+    },
+    {
+      "port": "mem_dq[25]",
+      "pin": "D1",
+      "original_label": "BANKR4",
+      "reroute_report_label": "BANKL6"
+    },
+    {
+      "port": "mem_dq[26]",
+      "pin": "G1",
+      "original_label": "BANKR4",
+      "reroute_report_label": "BANKL6"
+    },
+    {
+      "port": "mem_dq[27]",
+      "pin": "A2",
+      "original_label": "BANKR4",
+      "reroute_report_label": "BANKL6"
+    },
+    {
+      "port": "mem_dq[28]",
+      "pin": "E1",
+      "original_label": "BANKR4",
+      "reroute_report_label": "BANKL6"
+    },
+    {
+      "port": "mem_dq[29]",
+      "pin": "A3",
+      "original_label": "BANKR4",
+      "reroute_report_label": "BANKL6"
+    },
+    {
+      "port": "mem_dq[2]",
+      "pin": "F5",
+      "original_label": "BANKR4",
+      "reroute_report_label": "BANKL6"
+    },
+    {
+      "port": "mem_dq[30]",
+      "pin": "G2",
+      "original_label": "BANKR4",
+      "reroute_report_label": "BANKL6"
+    },
+    {
+      "port": "mem_dq[31]",
+      "pin": "C2",
+      "original_label": "BANKR4",
+      "reroute_report_label": "BANKL6"
+    },
+    {
+      "port": "mem_dq[3]",
+      "pin": "L8",
+      "original_label": "BANKR4",
+      "reroute_report_label": "BANKL6"
+    },
+    {
+      "port": "mem_dq[4]",
+      "pin": "G4",
+      "original_label": "BANKR4",
+      "reroute_report_label": "BANKL6"
+    },
+    {
+      "port": "mem_dq[5]",
+      "pin": "K7",
+      "original_label": "BANKR4",
+      "reroute_report_label": "BANKL6"
+    },
+    {
+      "port": "mem_dq[6]",
+      "pin": "F4",
+      "original_label": "BANKR4",
+      "reroute_report_label": "BANKL6"
+    },
+    {
+      "port": "mem_dq[7]",
+      "pin": "J5",
+      "original_label": "BANKR4",
+      "reroute_report_label": "BANKL6"
+    },
+    {
+      "port": "mem_dq[8]",
+      "pin": "H6",
+      "original_label": "BANKR4",
+      "reroute_report_label": "BANKL6"
+    },
+    {
+      "port": "mem_dq[9]",
+      "pin": "F8",
+      "original_label": "BANKR4",
+      "reroute_report_label": "BANKL6"
+    },
+    {
+      "port": "mem_dqs[0]",
+      "pin": "J4",
+      "original_label": "BANKR4",
+      "reroute_report_label": "BANKL6"
+    },
+    {
+      "port": "mem_dqs[1]",
+      "pin": "H7",
+      "original_label": "BANKR4",
+      "reroute_report_label": "BANKL6"
+    },
+    {
+      "port": "mem_dqs[2]",
+      "pin": "B5",
+      "original_label": "BANKR4",
+      "reroute_report_label": "BANKL6"
+    },
+    {
+      "port": "mem_dqs[3]",
+      "pin": "C1",
+      "original_label": "BANKR4",
+      "reroute_report_label": "BANKL6"
+    },
+    {
+      "port": "mem_dqs_n[0]",
+      "pin": "H4",
+      "original_label": "BANKR4",
+      "reroute_report_label": "BANKL6"
+    },
+    {
+      "port": "mem_dqs_n[1]",
+      "pin": "G7",
+      "original_label": "BANKR4",
+      "reroute_report_label": "BANKL6"
+    },
+    {
+      "port": "mem_dqs_n[2]",
+      "pin": "A5",
+      "original_label": "BANKR4",
+      "reroute_report_label": "BANKL6"
+    },
+    {
+      "port": "mem_dqs_n[3]",
+      "pin": "B1",
+      "original_label": "BANKR4",
+      "reroute_report_label": "BANKL6"
+    },
+    {
+      "port": "mem_odt",
+      "pin": "H2",
+      "original_label": "BANKR5",
+      "reroute_report_label": "BANKL6"
+    },
+    {
+      "port": "mem_ras_n",
+      "pin": "P6",
+      "original_label": "BANKR5",
+      "reroute_report_label": "BANKL6"
+    },
+    {
+      "port": "mem_rst_n",
+      "pin": "H1",
+      "original_label": "BANKR5",
+      "reroute_report_label": "BANKL6"
+    },
+    {
+      "port": "mem_we_n",
+      "pin": "T8",
+      "original_label": "BANKR5",
+      "reroute_report_label": "BANKL6"
+    },
+    {
+      "port": "pix_clk",
+      "pin": "T24",
+      "original_label": "BANKL5",
+      "reroute_report_label": "BANKL6"
+    },
+    {
+      "port": "pixclk_in",
+      "pin": "K21",
+      "original_label": "BANKL4",
+      "reroute_report_label": "BANKL6"
+    },
+    {
+      "port": "r_in[3]",
+      "pin": "J20",
+      "original_label": "BANKL4",
+      "reroute_report_label": "BANKL6"
+    },
+    {
+      "port": "r_in[4]",
+      "pin": "K20",
+      "original_label": "BANKL4",
+      "reroute_report_label": "BANKL6"
+    },
+    {
+      "port": "r_in[5]",
+      "pin": "G21",
+      "original_label": "BANKL4",
+      "reroute_report_label": "BANKL6"
+    },
+    {
+      "port": "r_in[6]",
+      "pin": "G20",
+      "original_label": "BANKL4",
+      "reroute_report_label": "BANKL6"
+    },
+    {
+      "port": "r_in[7]",
+      "pin": "H22",
+      "original_label": "BANKL4",
+      "reroute_report_label": "BANKL6"
+    },
+    {
+      "port": "r_out[0]",
+      "pin": "N21",
+      "original_label": "BANKL5",
+      "reroute_report_label": "BANKL6"
+    },
+    {
+      "port": "r_out[1]",
+      "pin": "L23",
+      "original_label": "BANKL5",
+      "reroute_report_label": "BANKL6"
+    },
+    {
+      "port": "r_out[2]",
+      "pin": "L22",
+      "original_label": "BANKL5",
+      "reroute_report_label": "BANKL6"
+    },
+    {
+      "port": "r_out[3]",
+      "pin": "L25",
+      "original_label": "BANKL5",
+      "reroute_report_label": "BANKL6"
+    },
+    {
+      "port": "r_out[4]",
+      "pin": "L24",
+      "original_label": "BANKL5",
+      "reroute_report_label": "BANKL6"
+    },
+    {
+      "port": "r_out[5]",
+      "pin": "K26",
+      "original_label": "BANKL5",
+      "reroute_report_label": "BANKL6"
+    },
+    {
+      "port": "r_out[6]",
+      "pin": "K25",
+      "original_label": "BANKL5",
+      "reroute_report_label": "BANKL6"
+    },
+    {
+      "port": "r_out[7]",
+      "pin": "P16",
+      "original_label": "BANKL5",
+      "reroute_report_label": "BANKL6"
+    },
+    {
+      "port": "rstn_out",
+      "pin": "G25",
+      "original_label": "BANKL4",
+      "reroute_report_label": "BANKL6"
+    },
+    {
+      "port": "sys_clk",
+      "pin": "D18",
+      "original_label": "BANKL3",
+      "reroute_report_label": "BANKL6"
+    },
+    {
+      "port": "uart_rx",
+      "pin": "B24",
+      "original_label": "BANKL3",
+      "reroute_report_label": "BANKL6"
+    },
+    {
+      "port": "uart_tx",
+      "pin": "C24",
+      "original_label": "BANKL3",
+      "reroute_report_label": "BANKL6"
+    },
+    {
+      "port": "vs_in",
+      "pin": "H24",
+      "original_label": "BANKL4",
+      "reroute_report_label": "BANKL6"
+    },
+    {
+      "port": "vs_out",
+      "pin": "R21",
+      "original_label": "BANKL5",
+      "reroute_report_label": "BANKL6"
+    }
+  ],
+  "physical_bank_invariant": "Same device/package and identical fixed pin LOC determine the same physical bank. Raw reports are not modified."
+}

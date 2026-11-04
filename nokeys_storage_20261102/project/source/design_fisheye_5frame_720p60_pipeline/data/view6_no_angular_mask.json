@@ -1,0 +1,27 @@
+{
+  "angular_mask": false,
+  "maximum_output_ray_angle_deg": 70.8556556484076,
+  "pixels_outside_prior_65_degree_cone": 142264,
+  "eligible_output_pixels": 921600,
+  "invalid_source_neighborhood_pixels": 0,
+  "output_K": [
+    [
+      271.128242121322,
+      0.0,
+      684.2288276998111
+    ],
+    [
+      0.0,
+      270.1578086884619,
+      375.23836690108885
+    ],
+    [
+      0.0,
+      0.0,
+      1.0
+    ]
+  ],
+  "post_scale": false,
+  "source_K_D_unchanged": true,
+  "full_raw_200_degree_coverage_verified": false
+}

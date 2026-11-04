@@ -1,0 +1,8 @@
+# Optional analysis, preview, unit-test and Windows camera-enumeration dependencies.
+# Main application dependencies are included first.
+-r requirements_windows.txt
+Pillow==12.1.1
+matplotlib
+scipy
+psutil
+pygrabber

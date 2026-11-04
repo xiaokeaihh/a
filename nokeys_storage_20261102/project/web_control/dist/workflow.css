@@ -1,0 +1,10 @@
+.workflow-buttons{display:flex;flex-wrap:wrap;gap:10px;margin:12px 0}.workflow-options{padding:12px;background:#302728;border:1px solid var(--line);border-radius:10px;margin-top:12px}.workflow-options label{display:flex;align-items:center;gap:8px}.workflow-options input{width:18px;height:18px;accent-color:var(--accent)}.recording-list{display:grid;gap:8px;margin-top:12px;max-height:260px;overflow:auto}.recording-row{display:flex;align-items:center;justify-content:space-between;gap:12px;padding:8px;border-bottom:1px solid var(--line)}.recording-row span{font-size:13px;color:#d2c4b7}.recording-row .delete-recording{border-color:#8c534b;color:#f0c2b7;background:#392629}#recordingReplay{display:block;width:100%;max-height:500px;background:#000;border-radius:10px}#recordingEvents{max-height:130px;overflow:auto}.attitude-overlay{position:absolute;left:.7%;bottom:3%;max-width:97%;padding:5px 9px;border:1px solid #76523b;border-radius:5px;background:#282121e8;color:#f3ebe1;font:clamp(10px,1.25vw,18px) 'Microsoft YaHei',sans-serif;z-index:3;pointer-events:none}.attitude-overlay[hidden]{display:none}
+
+/* New controls follow the original warm sidebar and button spacing. */
+#imageControlsPanel .workflow-buttons{display:grid;grid-template-columns:1fr;gap:8px;margin:12px 0 0}
+#imageControlsPanel .workflow-buttons button{width:100%}
+#imageControlsPanel .caption{margin-bottom:0}
+#recordingPanel .workflow-buttons{gap:8px}
+#recordingTitle{font-size:13px;font-weight:500;color:#dfc3a8;margin:16px 0 10px}
+.recording-row{flex-wrap:wrap;gap:8px}
+.recording-row span{flex:1 1 240px;min-width:0;overflow-wrap:anywhere}
